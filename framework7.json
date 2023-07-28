@@ -1,0 +1,18 @@
+{
+  "cwd": "C:\\Users\\ASUS\\Documents\\Tes intern",
+  "type": [
+    "web"
+  ],
+  "name": "Appregis",
+  "framework": "core",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": false
+  },
+  "customBuild": false
+}
