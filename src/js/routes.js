@@ -1,47 +1,60 @@
+import HomePage from "../pages/home.f7";
+import AboutPage from "../pages/about.f7";
+import FormPage from "../pages/form.f7";
+import CatalogPage from "../pages/catalog.f7";
+import ProductPage from "../pages/product.f7";
+import SettingsPage from "../pages/settings.f7";
+import Wizard_1Page from "../pages/wizard_1.f7";
+import Wizard_2Page from "../pages/wizard_2.f7";
+import Wizard_3Page from "../pages/wizard_3.f7";
 
-import HomePage from '../pages/home.f7';
-import AboutPage from '../pages/about.f7';
-import FormPage from '../pages/form.f7';
-import CatalogPage from '../pages/catalog.f7';
-import ProductPage from '../pages/product.f7';
-import SettingsPage from '../pages/settings.f7';
-
-import DynamicRoutePage from '../pages/dynamic-route.f7';
-import RequestAndLoad from '../pages/request-and-load.f7';
-import NotFoundPage from '../pages/404.f7';
+import DynamicRoutePage from "../pages/dynamic-route.f7";
+import RequestAndLoad from "../pages/request-and-load.f7";
+import NotFoundPage from "../pages/404.f7";
 
 var routes = [
   {
-    path: '/',
+    path: "/",
     component: HomePage,
   },
   {
-    path: '/about/',
+    path: "/about/",
     component: AboutPage,
   },
   {
-    path: '/form/',
+    path: "/form/",
     component: FormPage,
   },
   {
-    path: '/catalog/',
+    path: "/catalog/",
     component: CatalogPage,
   },
   {
-    path: '/product/:id/',
+    path: "/product/:id/",
     component: ProductPage,
   },
   {
-    path: '/settings/',
+    path: "/settings/",
     component: SettingsPage,
   },
-
   {
-    path: '/dynamic-route/blog/:blogId/post/:postId/',
+    path: "/wizard_1/",
+    component: Wizard_1Page,
+  },
+  {
+    path: "/wizard_2/",
+    component: Wizard_2Page,
+  },
+  {
+    path: "/wizard_3/",
+    component: Wizard_3Page,
+  },
+  {
+    path: "/dynamic-route/blog/:blogId/post/:postId/",
     component: DynamicRoutePage,
   },
   {
-    path: '/request-and-load/user/:userId/',
+    path: "/request-and-load/user/:userId/",
     async: function ({ router, to, resolve }) {
       // App instance
       var app = router.app;
@@ -56,19 +69,19 @@ var routes = [
       setTimeout(function () {
         // We got user data from request
         var user = {
-          firstName: 'Vladimir',
-          lastName: 'Kharlampidi',
-          about: 'Hello, i am creator of Framework7! Hope you like it!',
+          firstName: "Vladimir",
+          lastName: "Kharlampidi",
+          about: "Hello, i am creator of Framework7! Hope you like it!",
           links: [
             {
-              title: 'Framework7 Website',
-              url: 'http://framework7.io',
+              title: "Framework7 Website",
+              url: "http://framework7.io",
             },
             {
-              title: 'Framework7 Forum',
-              url: 'http://forum.framework7.io',
+              title: "Framework7 Forum",
+              url: "http://forum.framework7.io",
             },
-          ]
+          ],
         };
         // Hide Preloader
         app.preloader.hide();
@@ -81,14 +94,14 @@ var routes = [
           {
             props: {
               user: user,
-            }
+            },
           }
         );
       }, 1000);
     },
   },
   {
-    path: '(.*)',
+    path: "(.*)",
     component: NotFoundPage,
   },
 ];

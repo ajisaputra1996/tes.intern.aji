@@ -1,0 +1,116 @@
+<template>
+  <div class="page" data-name="wizard_1">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="title">SERU Testing</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">Form Example</div>
+      <div class="list list-strong-ios list-dividers-ios list-outline-ios">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">First Name</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="first name" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Last Name</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="last name" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Biodata</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="biodata" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Provinsi</div>
+                <div class="item-input-wrap">
+                  <select placeholder="Provinsi" class="Dropdown">
+                    <option>Banten</option>
+                    <option>Jakarta</option>
+                    <option>Bali</option>
+                    <option>Jawa Timur</option>
+                    <option>Jawa Tengah</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Kota</div>
+                <div class="item-input-wrap">
+                  <select placeholder="Kota" class="Dropdown">
+                    <option value="Tangerang">Tangerang</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Denpasar">Denpasar</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Semarang">Semarang</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Kecamatan</div>
+                <div class="item-input-wrap">
+                  <select placeholder="Kecamatan" class="Dropdown">
+                    <option value="Kosambi">Kosambi</option>
+                    <option value="Gambir">Gambir</option>
+                    <option value="Pedungan">Pedungan</option>
+                    <option value="Tegalsari">Tegalsari</option>
+                    <option value="Cepoko">Cepoko</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Kelurahan</div>
+                <div class="item-input-wrap">
+                  <select placeholder="Kelurahan" class="Dropdown">
+                    <option value="Cengklong">Cengklong</option>
+                    <option value="Gunungpati">Gunungpati</option>
+                    <option value="Kalideres">Kalideres</option>
+                    <option value="Dauhpuri">Dauhpuri</option>
+                    <option value="Dukuh kupang">Dukuh kupang</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

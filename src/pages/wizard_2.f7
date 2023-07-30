@@ -1,0 +1,52 @@
+<template>
+  <div class="page" data-name="wizard_1">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="title">Upload Foto</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">Form Example</div>
+      <div class="list list-strong-ios list-dividers-ios list-outline-ios">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Foto selfie</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="first name" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Foto KTP</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="last name" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Foto Bebas</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="biodata" />
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default () => {
+    return $render;
+  };
+</script>
