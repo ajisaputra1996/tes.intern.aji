@@ -40,6 +40,16 @@
               </div>
             </div>
           </li>
+          <li>
+            <div class="block block-strong grid grid-cols-10 grid-gap">
+              <a class="button button-fill convert-form-to-data" href="#"
+                >Previous</a
+              >
+              <a class="button button-fill convert-form-to-data" href="#"
+                >Next</a
+              >
+            </div>
+          </li>
         </ul>
       </div>
     </div>
